@@ -1,0 +1,74 @@
+/*
+        селектор{
+        property-name: property-value;
+        property-name: property-value;
+        ...
+        }
+        */
+
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+p {
+    background-color: rgb(160, 139, 180);
+    font-family: 'Tangerine', serif;
+    font-size: xx-large;
+}
+
+h2,
+h3,
+h4,
+h1,
+h5,
+h6 {
+    /*груповий селектор*/
+    text-align: center;
+    background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+* {
+    /*универсальный селектор*/
+    /*Складання вiдступiв за замовчуванням*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(130, 178, 220);
+
+}
+
+#header-style {
+    background-color: darkcyan;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.bg-green {
+    background-color: black;
+}
+
+.color-blue {
+    color: azure;
+}
+
+.font-style {
+    /* font-size: 1.200;
+            font-weight: 300;
+            font-style: italic;
+            font-variant: small-caps;
+            line-height: 0.7; */
+    /*font :[style] [variant] [weight] [size]/[line-height] [family];*/
+    font: italic small-caps bold 1.3em/17px 'Trebuchet MS';
+    word-spacing: 3rem;
+    letter-spacing: 0.5rem;
+    text-transform: capitalize;
+    /* text-indent: 1%; */
+    text-decoration: underline dotted black 1px;
+    text-align: center;
+    /* color: coral; */
+    /* color: #ff2347; */
+    /* color: rgb(123, 100, 200); */
+    /* color: transparent; */
+    /* color: rgba(106, 101, 122, 0.5); */
+    color: hsl(270, 78%, 57%);
+}

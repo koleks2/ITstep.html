@@ -5,10 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заннятя 3 - Основи cтилi</title>
-    <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <style>
+        /* li::marker {
+            color: brown;
+            content: "😺";
+        }
+
+        p::before{
+            content: "😎"
+        }
+
+        h4::after{
+            content: "😵";
+        } */
+
+        ul {
+            list-style-type: circle;
+            list-style-position: outside;
+            /* list-style-image: image; */
+        }
+
+        ol {
+            list-style-type: upper-alpha;
+        }
+
+        .nested-list {
+            list-style-type: square;
+            color: #df70de;
+        }
+
+        div{
+            background-color: #7e4040;
+            /* padding-left: 10px;
+            padding-bottom: 25px;
+            padding-right: 40px;
+            padding-top: 8px; */
+            /* padding: 10px 25px 40px 8px; */
+            /* top > left and right > bottom */
+            /* padding:  10px 30px 5px; */
+            /* top and bottom > left and right */
+            /* padding: 20px 35px; */
+            margin: 30px;
+            padding: 40px;
+        }
+
+    </style>
 </head>
 
 <body>
+
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, veritatis dolore! Quas mollitia tempore
+        harum facere quos ipsum sapiente suscipit? Assumenda repellendus culpa nostrum quod qui corporis dolor nam
+        explicabo nulla necessitatibus placeat, nemo, beatae, excepturi corrupti doloribus rem? Aliquid tempore totam a
+        sit obcaecati non mollitia blanditiis voluptatibus dolor.</div>
+
+    <ul class="nested-list">
+        <li>программування
+            <ul>
+                <li>fontrend (HTML, CSS, JS)</li>
+                <li>backend(C#, JAVA, Python)</li>
+            </ul>
+        </li>
+        <li>Дизайн</li>
+    </ul>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A deleniti minus veritatis soluta. Magnam pariatur
+            quo consectetur laudantium, asperiores, earum sequi necessitatibus, dolores quas in quidem.</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <ol>
+        <li>открыть редактор</li>
+        <li>написать код</li>
+        <li>закрыть редактор</li>
+    </ol>
+
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Мова списку структур веб cтopiнoк</dd>
+        <dt>IDE</dt>
+        <dd>Iнтегруване середовище розробки</dd>
+    </dl>
+
+
     <div>
         &lt;&gt;
     </div>

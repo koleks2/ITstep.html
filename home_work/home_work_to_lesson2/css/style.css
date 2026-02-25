@@ -1,0 +1,25 @@
+#text1{
+    text-align: center;
+    background-color: #a09abc;
+}
+
+#background{
+   background-color: #b6a6ca; 
+}
+
+#hredact{
+    width: 90rem;
+    height: 3px;
+    background-color: #d5cfe1;
+    border:none;
+}
+
+#text2{
+    text-align: center;
+    background-color: #a79ebe;
+}
+
+.table1{
+    background-color: #8a85a4;
+    margin-right: 0 auto;
+}

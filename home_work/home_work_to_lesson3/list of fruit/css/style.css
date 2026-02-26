@@ -1,0 +1,17 @@
+.bodybackground{
+    background-color: #dcbab7;
+}
+ol{
+    background-color: #b96f68;
+}
+li{
+    color: #ffffff;
+    padding: 6px;
+}
+li span{
+    background-color: #8f3245;
+    padding: 3px 9px;
+}
+.colorr{
+    background-color: #b75568;
+}

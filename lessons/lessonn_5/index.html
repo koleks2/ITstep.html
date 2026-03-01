@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon"
+        href="https://cdn.iconscout.com/icon/free/png-256/free-html-5-icon-svg-download-png-1175208.png">
+    <style>
+        * {
+            margin: 0;
+            background-color: aliceblue;
+        }
+
+        .img-conteiner {
+            border: 3px cadetblue solid;
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            width: 40%;
+            height: 50%;
+            border-radius: 15px;
+            box-shadow: 3px 3px 7px black;
+        }
+
+        img:hover {
+            width: 60%;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        a:link{
+            color: brown;
+        }
+        a:visited{
+            color: #6aa2a2;
+            text-decoration: dotted line-through black;
+        }
+        a:focus{
+            color: blueviolet;
+        }
+
+        a:active{
+            color: coral;
+        }
+
+        .button:hover{
+            background-color: #342aa5;
+            color: #292089;
+        }
+        
+        .button a:hover{
+            background-color: brown;
+            color: black;
+        }
+
+        .button{
+            width: 50%;
+            padding: 10px 0;
+            text-align: center;
+            margin: auto;
+            border:solid red 1px;
+            border-radius: 10px;
+            background-color: red;
+            transition-property: all;
+            transition-duration: 0.8s;
+            transition-timing-function:cubic-bezier(0.01, 0.04, 0.99, 0.98) 0s;
+            transition-delay: 0s;
+            /* transition: all 0.5s cubic-bezier(0.01, 0.04, 0.99, 0.98) 0s; */
+        }
+        .button a{
+            background-color: transparent;
+            color: black;
+        }
+        
+        .transform-example{
+            margin: 10px;
+            padding: 10px;
+            height: auto;
+            border: solid cadetblue 5px;
+        }
+
+        .square {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            margin: 15px auto;
+            transition: all 0.5s cubic-bezier(0.01, 0.04, 0.99, 0.98) 0s;
+        }
+
+        .translate-example:hover{
+            transform: translate(25px, 35px);
+        }
+
+        .scale-example:hover{
+            transform: scale(2,0.5);
+        }
+
+        .rotate2d:hover{
+            transform: rotate(120deg);
+
+        }
+
+        .rotate2d{
+            transform-origin: 10% 25%;
+        }
+
+        .rotate3dx:hover{
+            transform: rotateX(60deg);
+        }
+        .rotate3dY:hover{
+            transform: rotateY(60deg);
+        }
+        .rotate3dZ:hover{
+            transform: rotateZ(60deg);
+        }
+
+        .skew:hover{
+            transform: skew(25deg, 35deg);
+        }
+
+        .animations{
+            width: 80%;
+            height: 500px;
+            text-align: center;
+            box-sizing: border-box;
+            margin: 5px;
+            border: cadetblue solid 3px;
+            padding:0;
+        }
+        .circle{
+            height: 50px;
+            width: 50px;
+            background-color: darkcyan;
+            border-radius: 50%;
+            margin: 10px auto;
+            animation: circle-anim;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            /* animation-fill-mode: forwards; */
+            
+        }
+        @keyframes circle-anim{
+            0% {
+                transform:translate(0,0);
+                background-color: cadetblue;
+            }
+            25%{
+                transform: translate(400px, 0);
+                background-color: chocolate;
+            }
+            50%{
+                transform: translate(400px, 400px);
+                background-color: turquoise;
+            }
+            75%{
+                transform: translate(0, 400px);
+                background-color: crimson;
+            }
+            100%{
+                transform: translate(0,0);
+                background-color: darkgreen;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Анимации и гипер сыллки</h1>
+
+    <div class="animations">
+
+        <div class="circle"></div>
+
+    </div>
+
+    <div class="transform-example">
+        <div class="translate-example square"></div>
+        <div class="scale-example square"></div>
+        <div class="rotate2d square"></div>
+        <div class="rotate3dx square"></div>
+        <div class="rotate3dY square"></div>
+        <div class="rotate3dZ square"></div>
+        <div class="skew square"></div>
+    </div>
+
+    <div  class="button">
+        <a href="">нажми</a>
+    </div>
+
+    <p>
+        <a href="https://www.youtube.com"> гиперссылка</a>- это элемент который ведёт другую страницу
+        <br>
+        <a href="../lesson_4/index.html">ссылка на другу страницу</a>
+        <a href="#ssd">ссылка на элемент</a>
+        <a href="https://github.com">ссылка</a>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ipsum mollitia qui minus dolores reiciendis aut
+        aliquam, doloremque reprehenderit eaque natus tenetur saepe vitae accusantium ipsam? Vero, aliquid officia
+        veritatis, corrupti esse obcaecati ex dolore accusantium earum tempora provident eligendi minima, impedit nulla
+        ipsum! Hic, distinctio doloremque et odio sapiente fuga odit. Recusandae assumenda placeat quisquam. Beatae
+        quaerat sequi voluptas quas voluptates quibusdam quod consequuntur. Facere at dolores repellendus molestias
+        dolor, eveniet totam unde sapiente culpa eos commodi soluta maxime, quia esse harum, saepe magni quis! In
+        molestiae dolores cupiditate inventore enim, minima architecto voluptatibus veniam quis maxime dolorum iure
+        laudantium animi magni explicabo nulla ab quasi. Distinctio eius ducimus aliquam itaque. Dolorum maxime illum
+        repellendus reiciendis? Obcaecati voluptates dolor enim! Odit provident ipsam nulla maiores fuga nihil nobis
+        praesentium laboriosam. Quas, sequi. Eos animi ad voluptatem unde enim officiis natus alias minima ullam.
+        Assumenda reiciendis et deserunt sunt fuga odio fugiat, atque in voluptatem id cupiditate beatae, maxime
+        eveniet? Nihil, quod! Temporibus ratione deserunt facilis totam impedit, possimus dignissimos pariatur numquam
+        quas, praesentium tenetur! Odit, a vero sint doloribus quisquam qui fuga obcaecati eveniet velit iusto rem
+        tenetur repellendus debitis nobis exercitationem excepturi, consequuntur at minus itaque perspiciatis repellat
+        recusandae aspernatur explicabo! Earum debitis facere deleniti, molestiae quis architecto beatae omnis? In
+        inventore minima perspiciatis placeat voluptates dolores cum quaerat cupiditate mollitia ab ducimus, rerum
+        soluta! Nobis dolorem illum eligendi. Error natus adipisci voluptatem facilis neque. Provident consectetur totam
+        consequuntur dolor mollitia modi repudiandae nam aspernatur nihil eligendi repellat odio adipisci quae, iusto
+        autem officia dignissimos ipsum deleniti cupiditate tempora recusandae laborum laboriosam, omnis fugit. Laborum
+        velit qui rerum, facilis commodi doloribus praesentium consequuntur ut vero perferendis necessitatibus. Odio
+        esse quidem eius ad aut veritatis sint a in consectetur itaque delectus sequi, eos nulla magni ex, tenetur
+        facere non, iure fuga autem tempore dolor ducimus. Nisi, fugit doloremque dolorem asperiores quis magni numquam
+        illo adipisci veritatis perferendis est ea deleniti eaque repellendus id excepturi obcaecati? Reiciendis maxime,
+        reprehenderit expedita culpa illo iure consectetur delectus corrupti, sit pariatur possimus ducimus! Illum
+        laudantium pariatur magni? Assumenda obcaecati nihil rem accusamus quas.</p>
+    </p>
+    <div class="img-conteiner"><img id="ssd" src="../../shared_resursed/sunflover.jpeg" alt="sunflover"></div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site layout</title>
+    <style>
+        header{
+            margin: 2px;
+            height: 80px;
+            background-color: #9f4658;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            color: aliceblue;
+        }
+        menu{
+            background-color: #7e3947;
+            margin: 2px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            color: aliceblue;
+        }
+        .Asides{
+            display: flex;
+        }
+        #ASIDE1{
+            display: flex;
+            justify-content: center;
+            height: 80px;
+            width: 250px;
+            margin: 2px;
+            padding: 10px;
+            background-color: #c16779;
+            color: aliceblue;
+            text-align: center
+        }
+        #ASIDE2{
+            display: flex;
+            justify-content: center;
+            height: 150px;
+            width: 250px;
+            margin: 2px;
+            padding: 10px;
+            background-color: #c16779;
+            color: aliceblue;
+            text-align: center
+        }
+        #table{
+            background-color: #c16779;
+            margin: 2px;
+            padding: 10px;
+            width: 65%;
+            margin-left: 30px;
+            color: aliceblue;
+        }
+        #tdd{
+            align-items: center;
+            justify-content: center;
+            background-color: #df96a5;
+            height: 100px;
+            width: 900px;
+            padding: 10px;
+        }
+        #trr{
+            margin-left: 30px;
+        }
+        #table table{
+            border-spacing: 0 20px;
+        }
+        #ASIDE3{
+            background-color: #c16779;
+            color: aliceblue;
+            margin: 2px;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            font-size: 25px;
+        }
+        footer{
+            margin: 2px;
+            height: 80px;
+            background-color: #9f4658;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header><h3>HEADER</h3></header><br>
+    <menu><h3>MENU</h3></menu><br>
+    <div class="Asides">
+        <div>
+        <div id="ASIDE1"><h3>ASIDE 1</h3></div><br>
+        <div id="ASIDE2"><h3>ASIDE 2</h3></div>
+        </div>
+            <div id="table"><table>
+                <caption><h3>MAIN CONTENT</h3></caption>
+                <tr id="trr">
+                    <td id="tdd">SECTION 1</td>
+                </tr>
+                <tr id="trr">
+                    <td id="tdd">SECTION 2</td>
+                </tr>
+            </table></div>
+            <div id="ASIDE3"><h3><p>A</p><p>S</p><p>I</p><p>D</p><p>E</p><p>3</p></h3></div>
+    </div>
+    <br>
+    <footer><h2>FOOTER</h2></footer>
+</body>
+</html>

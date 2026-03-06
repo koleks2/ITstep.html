@@ -1,0 +1,19 @@
+#imagesz {
+    width: 60px;
+    height: 60px;
+}
+
+tr {
+    background-color: #c8c8c8;
+}
+
+td:hover {
+    background-color: #919191;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+span {
+    vertical-align: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

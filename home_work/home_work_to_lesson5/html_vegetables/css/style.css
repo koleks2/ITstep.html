@@ -1,0 +1,34 @@
+.centraltext {
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.centraltext2 {
+    margin: auto;
+    text-align: center;
+}
+
+.vegetables {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#card {
+    width: 170px;
+    margin: 10px;
+    padding: 10px;
+    border: solid #000000c8 1px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#card img {
+    padding: 20px;
+}
+
+hr {
+    width: 90%;
+}

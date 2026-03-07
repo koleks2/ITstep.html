@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .avatar {
+            width: 80%;
+            border-radius: 50%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        td:first-child {
+            text-align: center;
+        }
+
+        .avatar-column {
+            text-align: center;
+            background-color: aquamarine;
+            border: 2px solid black;
+            width: 30%;
+        }
+
+        table {
+            margin: 10px;
+        }
+        .hide-empty{
+            border: 0;
+            empty-cells: hide;
+            border-collapse: separate;
+        }
+        caption{
+            border: 1px solid black;
+            border-bottom: 0;
+            background-color: #8d98a4;
+        }
+        thead{
+            background-color: cornflowerblue;
+        }
+        tbody{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        tfoot{
+            background-color: darkgrey;
+            font-size: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Користувачi</caption>
+        <colgroup>
+            <col class="avatar-column">
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>avatar</th>
+                <th>name</th>
+                <th>e-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img class="avatar" src="../../shared_resursed/cat_box_64.png" alt="avatar generic"></td>
+                <td>Джон Доу</td>
+                <td><a href="mailto:Jhon.dou@gmail.com">Jhon.dou@gmail.com</a></td>
+                </tr>
+                <tr>
+            <td><img class="avatar" src="../../shared_resursed/cat_box_64.png" alt="avatar generic"></td>
+            <td>Джон Доу</td>
+            <td><a href="mailto:Jhon.dou@gmail.com">Jhon.dou@gmail.com</a></td>
+                </tr>
+                <tr>
+            <td><img class="avatar" src="../../shared_resursed/cat_box_64.png" alt="avatar generic"></td>
+            <td>Джон Доу</td>
+            <td><a href="mailto:Jhon.dou@gmail.com">Jhon.dou@gmail.com</a></td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">это футер таблицы</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>57</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>name</th>
+            <td>Jill</td>
+        </tr>
+        <tr>
+            <th rowspan="2">phone</th>
+            <td>555-1234</td>
+        </tr>
+        <tr>
+            <td>555-5678</td>
+        </tr>
+    </table>
+
+    <table class="hide-empty">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Colimn 3</th>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem ipsum dolor sit amet consectetur.</td>
+            <td>Lorem, ipsum.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

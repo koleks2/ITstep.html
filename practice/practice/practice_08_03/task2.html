@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            display: flex;
+        }
+        .block{
+            background-color: #2fb467;
+            height: 40px;
+            width: 100px;
+            color: #f3f3f3;
+            border: 1px solid #1f432b3b;
+            text-align: center;
+            position: relative;
+            padding-top: 17px;
+        }
+        .hidden-elem{
+            display: none;
+            position: absolute;
+            background-color: #2fb467;
+            height: 40px;;
+            width: 100px;
+            color: #f3f3f3;
+            border: 1px solid #1f432b3b;
+            text-align: center;
+            top: 55px;
+            padding-top: 17px;
+            transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .hidden-elem2{
+            display: none;
+            position: absolute;
+            background-color: #2fb467;
+            height: 40px;
+            width: 100px;
+            color: #f3f3f3;
+            border: 1px solid #1f432b3b;
+            text-align: center;
+            top: 113px;
+            padding-top: 17px;
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .hidden-elem3{
+            display: none;
+            position: absolute;
+            background-color: #2fb467;
+            height: 40px;
+            width: 100px;
+            color: #f3f3f3;
+            border: 1px solid #1f432b3b;
+            text-align: center;
+            top: 172px;
+            padding-top: 17px;
+            transition: all 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .hidden-elem4{
+            display: none;
+            position: absolute;
+            background-color: #2fb467;
+            height: 30px;
+            width: 100px;
+            left: 100px;
+            bottom: 2px;
+            top: 4px;
+            color: #f3f3f3;
+            border: 1px solid #1f432b3b;
+            text-align: center;
+            padding-top: 12px;
+            transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .hidden-elem5{
+            display: none;
+            position: absolute;
+            background-color: #2fb467;
+            height: 30px;
+            width: 100px;
+            left: 100px;
+            bottom: 2px;
+            top: 47px;
+            color: #f3f3f3;
+            border: 1px solid #1f432b3b;
+            text-align: center;
+            padding-top: 12px;
+            transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .hidden-elem6{
+            display: none;
+            position: absolute;
+            background-color: #2fb467;
+            height: 30px;
+            width: 100px;
+            left: 100px;
+            bottom: 2px;
+            top: 87px;
+            color: #f3f3f3;
+            border: 1px solid #1f432b3b;
+            text-align: center;
+            padding-top: 12px;
+            transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .block:hover{
+            background-color: #299a58;
+        }
+        .hover-elem:hover .hidden-elem {
+            display: block;
+        }
+        .hover-elem:hover .hidden-elem2 {
+            display: block;
+        }
+        .hover-elem:hover .hidden-elem3 {
+            display: block;
+        }
+        .hidden-elem:hover{
+            background-color: #299a58;
+        }
+        .hidden-elem2:hover{
+            background-color: #299a58;
+        }
+        .hidden-elem3:hover{
+            background-color: #299a58;
+        }
+        .hidden-elem4:hover{
+            background-color: #299a58;
+        }
+        .hidden-elem5:hover{
+            background-color: #299a58;
+        }
+        .hidden-elem6:hover{
+            background-color: #299a58;
+        }
+
+        .hidden-elem2:hover .hidden-elem4{
+            display: block;
+        }
+        .hidden-elem2:hover .hidden-elem5{
+            display: block;
+        }
+        .hidden-elem2:hover .hidden-elem6{
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="block">Home</div>
+        <div class="block hover-elem">Categories
+            <div class="hidden-elem">Man</div>
+            <div class="hidden-elem2 hover-elem2">Woomen
+                <div class="hidden-elem4">Dress</div>
+                <div class="hidden-elem5">Pants</div>
+                <div class="hidden-elem6">Shoes</div>
+            </div>
+            <div class="hidden-elem3">Kids</div>
+        </div>
+        <div class="block">About</div>
+        <div class="block">Contacts</div>
+    </div>
+</body>
+
+</html>

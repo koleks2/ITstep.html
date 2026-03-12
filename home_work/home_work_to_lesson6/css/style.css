@@ -1,0 +1,40 @@
+table {
+    border-collapse: collapse;
+}
+
+td,th {
+    border: 1px solid #777;
+    padding: 10px;
+}
+
+.aspect {
+    background: #f0df95;
+    font-weight: bold;
+}
+
+.sign {
+    background: #f0df95;
+    width: 40px;
+    font-weight: bold;
+}
+
+.simple {
+    background: #b7b6d8;
+}
+
+.progressive {
+    background: #e6a7a7;
+}
+
+.perfect {
+    background: #9fe0b5;
+}
+
+.perfectp {
+    background: #e3a7e3;
+}
+
+.small {
+    font-size: 13px;
+    font-style: italic;
+}

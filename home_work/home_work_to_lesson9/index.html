@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead th {
+            background: #82d5df;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        tr th:first-child,
+        tr td:first-child {
+            background: #82d5df;
+            font-weight: bold;
+            position: sticky;
+            left: 0;
+            z-index: 1;
+        }
+
+        thead th:first-child {
+            z-index: 3;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #e2e2e2;
+        }
+
+        div {
+            max-height: 500px;
+            max-width: 700px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divfor-scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                    <th>Header 4</th>
+                    <th>Header 5</th>
+                </tr>
+                </head>
+            <tbody>
+                <tr>
+                    <td>Line 1</td>
+                    <td>23</td>
+                    <td>123</td>
+                    <td>45</td>
+                    <td>12</td>
+                    <td>76</td>
+                </tr>
+                <tr>
+                    <td>Line 2</td>
+                    <td>23</td>
+                    <td>123</td>
+                    <td>45</td>
+                    <td>12</td>
+                    <td>76</td>
+                </tr>
+                <td>Line 2</td>
+                <td>34</td>
+                <td>63</td>
+                <td>25</td>
+                <td>7</td>
+                <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 3</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 4</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 5</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 6</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 1</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 7</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 8</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+</body>
+</table>
+</div>
+
+</body>
+
+</html>

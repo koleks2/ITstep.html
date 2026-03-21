@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-layout</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #d1d1d1;
+        }
+
+        header {
+            display: flex;
+            background-color: #2a2a2a;
+            color: aliceblue;
+            padding: 0 30px;
+        }
+
+        .btns {
+            padding: 0 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 500px;
+        }
+
+        .btns h3 {
+            box-sizing: border-box;
+            padding: 30px;
+            margin: 0;
+        }
+
+        .btns h3:hover {
+            cursor: pointer;
+            background-color: #3c3c3c;
+        }
+
+        .hero {
+            display: flex;
+            width: 1400px;
+            padding: 10px 100px;
+            gap: 20px;
+        }
+
+        .hero .first-content {
+            width: 1100px;
+            background-color: aliceblue;
+        }
+
+        .hero .first-content h2 {
+            padding-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 0;
+            font-size: 37px
+        }
+
+        .hero .first-content p {
+            padding-left: 10px;
+            color: #aaaaaa;
+        }
+
+        .hero .first-content img {
+            width: 100%;
+        }
+
+        .hero .first-content .contente {
+            color: black;
+            padding-bottom: 10px;
+        }
+
+        .hero .second-content {
+            margin-top: -18.5px;
+            width: 400px;
+            background-color: aliceblue;
+        }
+
+        .second-content h3 {
+            padding: 40px 20px;
+        }
+
+        .event img {
+            width: 80px;
+            padding: 10px;
+        }
+
+        .event {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .third-content {
+            width: 400px;
+            background-color: aliceblue;
+            margin-top: 10px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lorem Site</h1>
+        <div class="btns">
+            <h3>News</h3>
+            <h3>Events</h3>
+            <h3>Courses</h3>
+            <h3>Jobs</h3>
+            <h3>Tests</h3>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="first-content">
+            <h2>What is Lorem Ipsum?</h2>
+            <p>30/03/2019 11:20</p>
+            <img src="./img/html5img.png" alt="">
+            <p class="contente">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sit nesciunt vitae
+                repudiandae earum.
+                At eligendi iusto perferendis facilis totam obcaecati atque quas, tempore architecto quam, nihil nulla
+                excepturi assumenda hic! Nesciunt illo cum incidunt eos nihil vitae consequatur omnis! Commodi quas
+                voluptates obcaecati nostrum, repellat natus culpa dolores velit similique aliquid quisquam, quae fugit,
+                vitae voluptatum provident! Doloribus sequi a nemo mollitia. Iure consequuntur eveniet expedita ratione
+                nemo optio unde veritatis ut aliquam, quia aperiam provident reiciendis, similique ab consectetur
+                asperiores doloribus vitae nostrum harum voluptates repellat! Fugiat quos, quis aspernatur obcaecati
+                corrupti minima repellat id! Cumque, incidunt porro!</p>
+        </div>
+        <div class="real-second-content">
+            <div class="second-content">
+                <h3>Events</h3>
+                <div>
+                    <div class="event">
+                        <img src="./img/calendar_7.png" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quos.</span>
+                    </div>
+                    <div class="event">
+                        <img src="./img/calendar_19.png" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quos.</span>
+                    </div>
+                    <div class="event">
+                        <img src="./img/calendar_27.png" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quos.</span>
+                    </div>
+                    <div class="event">
+                        <img src="./img/calendar_7.png" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quos.</span>
+                    </div>
+                    <div class="event">
+                        <img src="./img/calendar_19.png" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quos.</span>
+                    </div>
+                    <div class="event">
+                        <img src="./img/calendar_27.png" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quos.</span>
+
+                    </div>
+                </div>
+                
+            </div>
+            <div class="third-content">
+                    <h4>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit exercitationem sint quo
+                        dignissimos?"</h4>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>

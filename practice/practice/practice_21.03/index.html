@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>сторінка із вкладками</title>
+    <style>
+        .flex-content {
+            display: flex;
+        }
+
+
+        .tabs .tab {
+            display: flex;
+            background-color: #8d8d8d;
+            width: 100px;
+            height: 50px;
+
+            align-items: center;
+            justify-content: center;
+            color: #cdcdcd;
+            border-bottom: #cdcdcd 0.5px solid;
+            transition: all 0.2s ease;
+        }
+
+        .tabs .tab:hover {
+            cursor: pointer;
+            background-color: #6a6a6a;
+        }
+
+        .content {
+            background-color: #585858;
+            display: flex;
+            color: #e3e3e3;
+            min-width: calc(300px -10%);
+        }
+
+        .tabs .active {
+            background-color: #585858;
+        }
+
+        .content>div {
+            width: 30%;
+            padding: 40px 10px;
+        }
+        .content img {
+            width: 100%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="flex-content">
+        <div class="tabs">
+            <div class="tab active">Tab 1</div>
+            <div class="tab">Tab 2</div>
+            <div class="tab">Tab 3</div>
+        </div>
+        <div class="content">
+            <div>
+                <img src="../../../shared_resursed/350x220.png" alt="здесь могла быть ваша реклама">
+                <h1>Header 1</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eos explicabo pariatur vitae
+                    tenetur animi dolorem saepe maxime libero ipsa officia iure vero veritatis, voluptatum reiciendis
+                    sequi ex nam qui cum. Nam, porro eligendi officia beatae nostrum tempore omnis et, reiciendis illum,
+                    hic repellendus! Repellendus consequuntur nisi cumque eius voluptatem eum porro quaerat ea est.</p>
+            </div>
+            <div>
+                <img src="../../../shared_resursed/350x220.png" alt="здесь могла быть ваша реклама">
+                <h1>Header 1</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eos explicabo pariatur vitae
+                    tenetur animi dolorem saepe maxime libero ipsa officia iure vero veritatis, voluptatum reiciendis
+                    sequi ex nam qui cum. Nam, porro eligendi officia beatae nostrum tempore omnis et, reiciendis illum,
+                    hic repellendus! Repellendus consequuntur nisi cumque eius voluptatem eum porro quaerat ea est.</p>
+            </div>
+            <div>
+                <img src="../../../shared_resursed/350x220.png" alt="здесь могла быть ваша реклама">
+                <h1>Header 1</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eos explicabo pariatur vitae
+                    tenetur animi dolorem saepe maxime libero ipsa officia iure vero veritatis, voluptatum reiciendis
+                    sequi ex nam qui cum. Nam, porro eligendi officia beatae nostrum tempore omnis et, reiciendis illum,
+                    hic repellendus! Repellendus consequuntur nisi cumque eius voluptatem eum porro quaerat ea est.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+.conteiner {
+    display: flex;
+}
+
+table {
+    width: 300px;
+    border-collapse: collapse;
+
+}
+
+td {
+    padding: 5px;
+}
+
+tr:first-child {
+    background-color: #364581;
+    color: aliceblue;
+}
+
+tr {
+    background-color: #98bbd2;
+}
+
+tr:first-child td {
+    border-radius: 10px 10px 0 0;
+}
+
+tr:last-child td {
+    border-radius: 0 0 10px 10px;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid #364581;
+}
+
+.right-aside {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+@media screen and (min-width:800px) and (max-width:1600px) {}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .conteiner {
+        flex-direction: column;
+    }
+
+    .right-aside {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:600px) {
+    .conteiner {
+        flex-direction: column;
+    }
+
+    .right-aside {
+        display: flex;
+        flex-direction: column;
+    }
+    table {
+        width: 100%;
+    }
+}

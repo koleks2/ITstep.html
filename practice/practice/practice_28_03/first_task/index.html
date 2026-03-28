@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <style>
+        body {
+            margin: 120px 160px;
+            background-color: #09322a;
+        }
+
+        .info {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #a9a9a98f;
+        }
+
+        .hero {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+            font-size: 20px;
+            width: 400px;
+        }
+
+        .author {
+            display: flex;
+            gap: 40px;
+        }
+
+        .author p {
+            color: #a9a9a98f;
+        }
+
+        .author span {
+            color: aliceblue;
+        }
+
+        .author img {
+            width: 200px;
+        }
+        .author .author-info {
+            display: flex;
+            gap: 20px;
+        }
+
+        .author .name,
+        .author .published {
+            display: flex;
+            gap: 20px;
+        }
+
+        @media screen and (min-width:600px) {}
+
+        @media screen and (max-width:600px) {
+            body {
+                margin: 50px 30px;
+            }
+
+            .author .author-info{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="info">
+            <h3>Home / Articles /</h3>
+        </div>
+        <div class="hero">
+            <h1>The Difference Between Responsive and Adaptive Disign</h1>
+        </div>
+        <div class="author">
+            <img src="../../../../home_work/home_work_to_lesson11/images/account.png" alt="">
+            <div class="author-info">
+                <div class="name">
+                    <div>
+                        <p>Author</p>
+                        <span>Geoff Graham</span>
+                    </div>
+                    <div>
+                        <p>49 Comments</p>
+                        <span>Go to comments</span>
+                    </div>
+                </div>
+                <div class="published">
+                    <div>
+                        <p>Published</p>
+                        <span>Nov 11, 2018</span>
+                    </div>
+                    <div>
+                        <p>Updated</p>
+                        <span>Now 17, 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

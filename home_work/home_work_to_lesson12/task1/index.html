@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail</title>
+    <style>
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0000001d;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            height: 100px;
+            justify-content: space-between;
+            border-bottom: 2px solid #a0a0a0
+        }
+
+        header img {
+            width: 60px;
+        }
+
+        header div {
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            margin: 15px 30px;
+        }
+
+        .sidebar div {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            height: 30px;
+            width: 100px;
+        }
+
+        .sidebar div:hover {
+            background-color: #00000010;
+        }
+
+        .active {
+            background-color: #e9baba;
+        }
+
+        .mails img {
+            width: 15px;
+            margin: 0 20px;
+        }
+
+        .mails .grey {
+            color: #a0a0a0;
+        }
+
+        .mails .mail {
+            display: flex;
+            border-bottom: 2px solid #a0a0a0;
+            padding: 15px 0;
+            justify-content: space-between;
+        }
+
+        main {
+            display: flex;
+        }
+
+        main .mails {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin-left: 20%;
+        }
+
+        .sidebar div span {
+            display: block;
+        }
+
+        @media screen and (min-width:550px) and (max-width:800px) {
+            .main .mails {
+                margin-right: 20px;
+            }
+        }
+
+        @media screen and (max-width:550px) {
+            .main .mails {
+                margin-right: 20px;
+            }
+            .sidebar div span {
+                display: none;
+            }
+            .sidebar div {
+                width: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../images/mail.png" alt="">
+            <h1>MY MAIL</h1>
+        </div>
+        <div>
+            <span>user@mymail.com</span>
+            <img src="../images/account.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="sidebar">
+            <div class="active">
+                <img src="../images/incom.png" alt="">
+                <span>Incoming</span>
+            </div>
+            <div>
+                <img src="../images/outcom.png" alt="">
+                <span>Outgoing</span>
+            </div>
+            <div>
+                <img src="../images/draft.png" alt="">
+                <span>Drafts</span>
+            </div>
+            <div>
+                <img src="../images/spam.png" alt="">
+                <span>Spam</span>
+            </div>
+        </div>
+        <div class="mails">
+            <div class="mail">
+                <span><img src="../images/star1.svg" alt="">me.Alex</span><span>Trip to South America <span
+                        class="grey"> - Sspendese us sapen non arcu rutum...</span> <img src="../images/attach_26.png"
+                        alt=""> 12 apr.</span>
+            </div>
+            <div class="mail">
+                <span><img src="../images/star1.svg" alt="">me.Alex</span><span>Trip to South America <span
+                        class="grey"> - Sspendese us sapen non arcu rutum...</span> <img src="../images/attach_26.png"
+                        alt=""> 12 apr.</span>
+            </div>
+            <div class="mail">
+                <span><img src="../images/star2.svg" alt="">me.Alex</span><span>Trip to South America <span
+                        class="grey"> - Sspendese us sapen non arcu rutum...</span>  12 apr.</span>
+            </div>
+            <div class="mail">
+                <span><img src="../images/star1.svg" alt="">me.Alex</span><span>Trip to South America <span
+                        class="grey"> - Sspendese us sapen non arcu rutum...</span> <img src="../images/attach_26.png"
+                        alt=""> 12 apr.</span>
+            </div>
+            <div class="mail">
+                <span><img src="../images/star1.svg" alt="">me.Alex</span><span>Trip to South America <span
+                        class="grey"> - Sspendese us sapen non arcu rutum...</span> 12 apr.</span>
+            </div>
+            <div class="mail">
+                <span><img src="../images/star2.svg" alt="">me.Alex</span><span>Trip to South America <span
+                        class="grey"> - Sspendese us sapen non arcu rutum...</span> <img src="../images/attach_26.png"
+                        alt=""> 12 apr.</span>
+            </div>
+            <div class="mail">
+                <span><img src="../images/star2.svg" alt="">me.Alex</span><span>Trip to South America <span
+                        class="grey"> - Sspendese us sapen non arcu rutum...</span> <img src="../images/attach_26.png"
+                        alt=""> 12 apr.</span>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

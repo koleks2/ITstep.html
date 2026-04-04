@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d3f61;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.container {
+  color: red;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-width: 560px;
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+nav {
+  background-color: black;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #0d3f61;
+}
+nav a:hover {
+  background-color: rgb(28.0681818182, 136.0227272727, 209.4318181818);
+}
+
+.danger {
+  border: 3px solid #089334;
+  color: red;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgb(6.9727272727, 33.7909090909, 52.0272727273);
+}
+
+p {
+  background-color: rgb(129, 65.5, 12.5);
+}
+
+.button-basic, .button-submit, .button-report {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.button-report {
+  background-color: #6f1111;
+}
+
+.button-submit {
+  background-color: #089334;
+  color: aliceblue;
+}/*# sourceMappingURL=style.css.map */

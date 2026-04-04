@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://images.unsplash.com/photo-1687197180710-b2b9484a3c5f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .block {
+            color: aliceblue;
+            height: 500px;
+            box-shadow: 1px 1px 30px black;
+            width: 750px;
+            margin: auto;
+            margin-top: 70px;
+            padding: 80px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .inpt {
+            display: flex;
+        }
+
+        .inputs {
+            justify-content: center;
+        }
+
+        .labels {
+            display: flex;
+            flex-direction: column;
+
+            text-align: left;
+        }
+
+        .labels label {
+            padding: 1px 0;
+        }
+
+        .inputs input {
+            height: 30px;
+        }
+
+        .inputs #email {
+            width: 99%;
+        }
+
+        .inputs .phones {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .inputs .names {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .inputs .names #name {
+            width: 46%;
+        }
+        #message {
+            width: 670px;
+            height: 100px;
+        }
+
+        #messege-subject {
+            width: 100%;
+            height: 40px;
+        }
+
+        .submit {
+            border: 2px solid aliceblue;
+            width: 89.5%;
+            float: right;
+            text-align: center;
+        }
+        .submit h3 {
+            margin: 10px 0;
+        }
+        .submit:hover{
+            cursor: pointer;
+        }
+
+        .inputs h1 {
+            margin-top: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        <h1>Contact form</h1>
+        <p>Please fill in your information and we'll be sending your order.</p>
+        <div class="inpt">
+            <div class="labels">
+                <label for="name">Your name</label>
+                <br><br>
+                <label for="email">Your email</label>
+                <br><br>
+                <label for="phone">Phone *</label>
+                <br>
+                <label for="messege-subject">Messege subject *</label>
+                <br>
+                <label for="message">Message *</label>
+            </div>
+            <div class="inputs">
+                <div class="names">
+                    <input type="text" name="name" id="name" placeholder="first name">
+                    <input type="text" name="name" id="name" placeholder="last name">
+                </div>
+                <br>
+
+                <input type="email" name="email" id="email" placeholder="youremail@gmail.com">
+                <br><br>
+
+                <div class="phones">
+                    <input type="number" name="phone" id="phone" placeholder="000">
+                    <input type="number" name="phone2" id="phone" placeholder="000">
+                    <input type="number" name="phone3" id="phone" placeholder="0000">
+                </div>
+                <br>
+
+                <select name="mesage" id="messege-subject">
+                    <option value="other">Other</option>
+                    <option value="other2">Other2</option>
+                    <option value="other3">Other3</option>
+                    <option value="burger">Burger 🙏😔</option>
+                </select>
+                <br><br>
+                <textarea name="message" id="message">
+        </textarea>
+            </div>
+
+
+
+        </div>
+
+        <hr>
+        <br>
+        <div class="submit">
+            <h3>SUMBIT FORM</h3>
+        </div>
+    </div>
+</body>
+
+</html>

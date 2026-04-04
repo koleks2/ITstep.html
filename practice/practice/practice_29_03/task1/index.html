@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+
+        * {
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: coral;
+            display: flex;
+            justify-content: center;
+        }
+        .block {
+            width: 25%;
+            text-align: center;
+        }
+        .login-box {
+            box-shadow: 1px 1px 14px black;
+            height: 70%;
+            margin-top: 120px;
+            background-color: aliceblue;
+            padding: 10px 0;
+        }
+        .login-box img {
+            width: 50%;
+            margin-top: -100px;
+        }
+        .login-box #username {
+            background-color: #ebf0f0;
+            width: 300px;
+            height: 40px;
+            border: 0;
+        }
+        .login-box #passwd {
+            background-color: #ebf0f0;
+            width: 300px;
+            height: 40px;
+            border: 0;
+        }
+
+        .login-box #login {
+            background-color: #26a222;
+            color: aliceblue;
+            width: 300px;
+            height: 40px;
+            border: 0;
+            border-bottom: 3px solid green;
+            transition: all 0.3s ease;
+        }
+        .login-box #login:hover {
+            background-color: #20871d;
+            cursor: pointer;
+        }
+
+        .login-box p {
+            color: coral;
+        }
+        .login-box p:hover {
+            color: #e25623;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .or {
+            color: aliceblue;
+        }
+        .socset {
+            display: flex;
+            justify-content: space-between;
+        }
+        .socset .facebook {
+            background-color: #4d4d86;
+            color: aliceblue;
+            border: 0;
+            width: 200px;
+            height: 50px;
+            font-size: 17px;
+            box-shadow: 1px 1px 14px black;
+        }
+        .socset .facebook:hover {
+            background-color: #3e3e6c;
+            cursor: pointer;
+        }
+    
+        .socset .twitter {
+            background-color: #68bccd;
+            color: aliceblue;
+            border: 0;
+            width: 200px;
+            height: 50px;
+            font-size: 17px;
+            box-shadow: 1px 1px 14px black;
+        }
+        .socset .twitter:hover {
+            background-color:#5397a4;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        <div class="login-box">
+            <img src="../image/account.png" alt="">
+            <h1>Member Login</h1>
+            <form action="/login">
+                <input type="text" name="username" id="username" title="username" placeholder="Username">
+                <br> 
+                <br>
+                <input type="password" name="password" id="passwd" title="password" placeholder="Password">
+                <br>
+                <br>
+                <input type="submit" value="Login" id="login">
+                <br>
+                <p>Forgot password?</p>
+            </form>
+        </div>
+        <p class="or">... or login  with:</p>
+        <div class="socset">
+            <button class="facebook">F Facebook</button>
+            <button class="twitter">🐦 Twitter</button>
+        </div>
+    </div>
+</body>
+
+</html>

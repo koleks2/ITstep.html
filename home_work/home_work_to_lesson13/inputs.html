@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            outline: none
+        }
+
+        .input-valid {
+            border: 2px solid #4CAF50;
+            color: #4CAF50
+        }
+
+        .input-invalid {
+            border: 2px solid #e53935;
+            color: #e53935
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer
+        }
+
+        .checkbox input {
+            appearance: none;
+            width: 40px;
+            height: 20px;
+            background: #ccc;
+            border-radius: 20px;
+            position: relative;
+            cursor: pointer
+        }
+
+        .checkbox input:checked {
+            background: #4CAF50
+        }
+
+        .checkbox input:checked {
+            background: #4CAF50
+        }
+
+        .checkbox input::before {
+            content: "";
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: white;
+            border-radius: 50%;
+            top: 1px;
+            left: 1px;
+            transition: .3s
+        }
+
+        .checkbox input:checked::before {
+            transform: translateX(20px)
+        }
+
+        .checkbox-second input {
+            background: #ccc;
+        }
+
+        .checkbox-second input:checked {
+            background: #e53935;
+        }
+
+        .checkbox-second input::before {
+            content: "";
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: white;
+            border-radius: 50%;
+            top: 1px;
+            left: 1px;
+            transition: .3s;
+        }
+
+        .checkbox-second input:checked::before {
+            transform: translateX(20px);
+        }
+
+        .radio input {
+            accent-color: #4CAF50
+        }
+
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            transition: .3s
+        }
+
+        .btn-green {
+            background: #4CAF50
+        }
+
+        .btn-green:hover {
+            background: #2e7d32
+        }
+
+        .btn-red {
+            background: #e53935
+        }
+
+        .btn-red:hover {
+            background: #8e2430
+        }
+
+        .btn-disabled {
+            background: #888;
+            cursor: not-allowed
+        }
+
+        .btn-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            resize: none
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section>
+            <h3>Inputs</h3>
+            <input class="input" placeholder="Enter some text">
+            <input class="input input-valid" value="valid text">
+            <input class="input input-invalid" value="invalid text">
+        </section>
+
+        <section>
+            <h3>Check boxes</h3>
+            <label class="checkbox">
+                <input type="checkbox" checked>
+                Subscribe
+            </label>
+
+            <label class="checkbox checkbox-second">
+                <input type="checkbox">
+                Subscribe
+            </label>
+        </section>
+
+        <section>
+            <h3>Radio buttons</h3>
+            <label class="radio">
+                <input type="radio" name="gender" checked> Male
+            </label>
+            <label class="radio">
+                <input type="radio" name="gender"> Female
+            </label>
+        </section>
+
+        <section>
+            <h3>Buttons</h3>
+            <button class="btn btn-green">Active</button>
+            <button class="btn btn-green">Hover</button>
+            <button class="btn btn-red">Danger</button>
+            <button class="btn btn-red">Hover</button>
+            <button class="btn btn-disabled">Disabled</button>
+
+            <br><br>
+
+            <button class="btn btn-green btn-circle">+</button>
+            <button class="btn btn-red btn-circle">−</button>
+        </section>
+
+        <section>
+            <h3>Text area</h3>
+            <textarea class="textarea" placeholder="Enter some text..."></textarea>
+        </section>
+
+    </div>
+    </head>
+
+</html>

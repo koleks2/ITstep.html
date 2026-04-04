@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .block {
+            margin: auto;
+            background-color: #96c6ce;
+            width: 650px;
+            padding: 100px 20px;
+            padding-top: 120px;
+            margin-top: 100px;
+            border-radius: 20px;
+        }
+
+        .little-line {
+            width: 500px;
+            top: 140px;
+            left: 460px;
+            position: absolute;
+            background-color: #f0a61c;
+            color: #ecf6ff;
+            padding-left: 10px;
+            border-radius: 10px ;
+        }
+        input {
+            border: 0;
+            background-color: #86b1b9;
+            border-bottom: 1px solid black;
+            height: 50px;
+            font-size: 24px;
+        }
+        .inp {
+            width: 30%;
+        }
+        .csv {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="little-line">
+        <h2>CREDIT CARD DETAILS</h2>
+    </div>
+    <div class="block">
+        <form action="./">
+            <label for="card">Card Number</label>
+            <br>
+            <input type="text" id="card" placeholder="1234 5678 9012 3456">
+            <br>
+            <label for="number">Name Of Card</label>
+            <br>
+            <input type="text" id="name" placeholder="Name Surname">
+            <br>
+            <div class="csv">
+                <label for="num">Expire Date</label>
+                <label for="CSV">CSV No.</label>
+            </div>
+            <div>
+                <input type="number" id="num" class="inp">
+                <input type="number" id="data" class="inp">
+                <input type="password" id="CSV" class="inp">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

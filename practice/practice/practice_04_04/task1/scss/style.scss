@@ -1,0 +1,22 @@
+@import "_reset";
+
+$color: #6aa1ee;
+
+header {
+    background-color: $color;
+    height: 140px;
+    color: aliceblue;
+    text-align: center;
+}
+
+main {
+    background-color: lighten($color, 30%);
+    height: 69.9vh;
+}
+
+footer {
+    background-color: darken($color, 20%);
+    height: 120px;
+    color: aliceblue;
+    text-align: center;
+}

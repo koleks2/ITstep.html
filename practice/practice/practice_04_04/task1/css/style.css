@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6aa1ee;
+  height: 140px;
+  color: aliceblue;
+  text-align: center;
+}
+
+main {
+  background-color: rgb(243.3313253012, 247.6385542169, 253.6686746988);
+  height: 69.9vh;
+}
+
+footer {
+  background-color: rgb(24.7831325301, 104.9638554217, 217.2168674699);
+  height: 120px;
+  color: aliceblue;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

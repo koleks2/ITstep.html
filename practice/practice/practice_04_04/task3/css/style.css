@@ -1,0 +1,18 @@
+.clasic-btn, .help-btn, .osnov-btn {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.osnov-btn {
+  background-color: #456dff;
+  color: aliceblue;
+}
+
+.help-btn {
+  background-color: #ff4f23;
+  color: aliceblue;
+}/*# sourceMappingURL=style.css.map */

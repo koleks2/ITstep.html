@@ -1,0 +1,37 @@
+.product-card {
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 2px;
+    width: 300px;
+
+    img {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    h4 {
+        margin: 2px;
+    }
+
+    .color-text {
+        color: #966303;
+    }
+
+    button {
+        background-color: #64662e;
+        color: aliceblue;
+        height: 40px;
+        width: 100px;
+        border-radius: 2px;
+        transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+        &:hover {
+            cursor: pointer;
+            background-color: #999d37;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}

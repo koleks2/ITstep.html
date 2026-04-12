@@ -1,0 +1,15 @@
+@import 'variables';
+
+@mixin block {
+    background-color: $backcolor;
+    margin: $marginx;
+    color: $color1;
+    border: $border;
+    text-align: $center-text;
+}
+
+@mixin conteiner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

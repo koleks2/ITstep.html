@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+@import 'buttons';
+@import 'cards';
+
+.divv {
+    // background-color: $backcolor;
+    // margin: $marginx;
+    // color: $color1;
+    // border: $border;
+    // text-align: $center-text;
+    @include block
+}

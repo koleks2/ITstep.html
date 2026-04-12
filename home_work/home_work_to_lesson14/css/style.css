@@ -1,0 +1,57 @@
+.btn, .btn-cancel, .btn-buy, .btn-info {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-info {
+  background-color: gainsboro;
+}
+
+.btn-buy {
+  background-color: green;
+}
+
+.btn-cancel {
+  background-color: red;
+}
+
+.product-card {
+  text-align: center;
+  border: 2px black solid;
+  border-radius: 2px;
+  width: 300px;
+}
+.product-card img {
+  padding: 10px;
+  border-radius: 15px;
+}
+.product-card h4 {
+  margin: 2px;
+}
+.product-card .color-text {
+  color: #966303;
+}
+.product-card button {
+  background-color: #64662e;
+  color: aliceblue;
+  height: 40px;
+  width: 100px;
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.product-card button:hover {
+  cursor: pointer;
+  background-color: #999d37;
+}
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.divv {
+  background-color: aliceblue;
+  margin: 0 200px;
+  color: blue;
+  border: #3e3232 solid 2px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
